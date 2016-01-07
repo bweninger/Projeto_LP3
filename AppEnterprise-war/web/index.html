@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="static/bootstrap.min.css" type="text/css"/>
+        <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <title>Pagina Principal</title>
+    </head>
+    <body>
+        <div class="col-md-10">
+            <h1>Exemplo de uso de FrontController</h1>
+            <a href="FrontControllerServlet?control=Lista">Lista</a>
+            <form action="/AppEnterpriseWeb/FrontControllerServlet?control=Busca" method="POST">
+                <input type="text" maxlength="30" id="nome" name="nome"/>
+                <button type="submit" class="btn btn-primary">Pesquisar</button>
+            </form>
+            <a href="/AppEnterpriseWeb/cadastraUsuario.html" class="btn btn-primary">Cadastrar Usuario</a>
+            
+        </div>
+    </body>
+</html>

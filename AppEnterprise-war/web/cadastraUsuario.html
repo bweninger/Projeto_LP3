@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="static/bootstrap.min.css" type="text/css" />
+<script src="static/jquery.min.js"></script>
+<script src="static/bootstrap.min.js"></script>
+<title>Cadastro de Usuário</title>
+</head>
+<body class="container">
+	<form class="form-horizontal col-md-12"
+		action="/AppEnterpriseWeb/FrontControllerServlet?control=CriaUsuario"
+		method="POST">
+		<input type="hidden" name="control" value="Cadastrar" />
+		<fieldset>
+			<!-- Form Name -->
+			<legend>Cadastro de Usuário</legend>
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="control-label col-md-4" for="usuario">Nome : </label>
+				<div class="col-md-4">
+					<input id="usuario" name="nome" type="text" placeholder="NOME"
+						required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-md-4" for="usuario">Sobrenome : </label>
+				<div class="col-md-4">
+					<input id="sobrenome" name="sobrenome" type="text" placeholder=SOBRENOME"
+						required="" class="form-control">
+				</div>
+			</div>
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="control-label col-md-4" for="senha">Senha: </label>
+				<div class="col-md-4">
+					<input id="senha" name="senha" type="password" placeholder="SENHA"
+						required="required" class="form-control">
+				</div>
+				<br />
+			</div>
+			<div class="form-group">
+				<label class="control-label col-md-4" for="senha">Repetir Senha: </label>
+				<div class="col-md-4">
+					<input id="senha" name="senha2" type="password" placeholder="SENHA"
+						required="required" class="form-control">
+				</div>
+				<br />
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Cadastrar" class="btn btn-info">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
